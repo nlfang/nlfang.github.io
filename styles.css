@@ -129,10 +129,6 @@ h1::after {
   background: var(--gray);
 }
 
-#resumeIcon {
-  width: 20%;
-}
-
 /*about*/
 #about {
   display: grid;
