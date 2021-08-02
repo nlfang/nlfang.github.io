@@ -1,9 +1,9 @@
 :root {
   --typewriterSpeed: 2s;
   --typewriterCharacters: 29;
-  --alpha-base: #dde5ed;
-  --alpha-legend: #92aca0;
-  --accent-legend: #3e5d58;
+  --peach: #F5C7B8;
+  --blue: #ADCFF1;
+  --gray: #D9D9D6;
 }
 
 /*fonts*/
@@ -27,7 +27,7 @@ h1 {
   margin-top: 8rem;
   position: relative;
   width: max-content;
-  color: var(--accent-legend);
+  color: black;
 }
 
 p {
@@ -35,6 +35,7 @@ p {
 }
 
 a {
+  font-size: 1.4rem;
   text-decoration: none;
 }
 
@@ -50,14 +51,16 @@ h1::after {
 }
 
 h1::before {
-  background: var(--alpha-legend);
+  background: var(--gray);
   animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 h1::after {
   width: 4px;
-  background: var(--accent-legend);
+  height: 4rem;
+  margin-top: 6px;
+  background: black;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
@@ -77,7 +80,7 @@ h1::after {
 
 /*fade-in effect*/
 #intro {
-  color: var(--accent-legend);
+  color: black;
   font-size: 2rem;
   font-weight: 700;
   opacity: 0;
@@ -100,19 +103,18 @@ h1::after {
   left: 0;
   width: 100%;
   z-index: 1;
-  background: var(--alpha-legend);
 }
 
-.navlink {
+.navLink {
   display: flex;
   margin-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 1.4rem;
-  color: white;
+  color: black;
 }
 
-.navlink:hover {
+.navLink:hover {
   text-decoration: underline overline;
 }
 
@@ -123,8 +125,9 @@ h1::after {
   text-align: center;
   width: 100%;
   height: 100vh;
-  background: var(--alpha-legend);
+  background: var(--gray);
 }
+
 /*about*/
 #about {
   display: grid;
@@ -133,14 +136,46 @@ h1::after {
   text-align: center;
   width: 100%;
   height: 100vh;
-  background: var(--alpha-base);
+  background: var(--peach);
 }
 
 #aboutText {
   text-align: left;
-  color: var(--accent-legend);
 }
 
 #aboutImage {
-  color: var(--accent-legend);
+}
+
+/*projects*/
+#projects {
+  place-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--blue);
+}
+
+#projectHeader {
+  margin-top: -10px;
+  padding-top: 50px;
+  font-size: 2rem;
+}
+
+#projectTile {
+  grid-template-columns: 1fr;
+}
+
+.projectImage {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+/*contact*/
+#contact {
+  place-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--gray);
 }
