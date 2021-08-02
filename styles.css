@@ -1,29 +1,146 @@
+:root {
+  --typewriterSpeed: 2s;
+  --typewriterCharacters: 29;
+  --alpha-base: #dde5ed;
+  --alpha-legend: #92aca0;
+  --accent-legend: #3e5d58;
+}
+
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+/*base styles*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: arial;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Source Code Pro", monospace;
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  margin-top: 8rem;
+  position: relative;
+  width: max-content;
+  color: var(--accent-legend);
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*typewriter effect*/
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--alpha-legend);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+  width: 4px;
+  background: var(--accent-legend);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
   }
-  
-  h1 {
-    font-size: 40px;
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
   }
-  
-  a {
-    margin-right: 40px;
+}
+
+/*fade-in effect*/
+#intro {
+  color: var(--accent-legend);
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1.5s) forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  #welcome-section {
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    h1 {
-      color: red;
-    }
-  }
+}
+/*nav*/
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: var(--alpha-legend);
+}
+
+.navlink {
+  display: flex;
+  margin-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.navlink:hover {
+  text-decoration: underline overline;
+}
+
+/*welcome*/
+#welcome {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--alpha-legend);
+}
+/*about*/
+#about {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  place-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--alpha-base);
+}
+
+#aboutText {
+  text-align: left;
+  color: var(--accent-legend);
+}
+
+#aboutImage {
+  color: var(--accent-legend);
+}
