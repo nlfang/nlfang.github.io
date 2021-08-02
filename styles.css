@@ -162,13 +162,7 @@ h1::after {
 }
 
 #projectTile {
-  grid-template-columns: 1fr;
-}
-
-.projectImage {
-  height: calc(100% - 6.8rem);
-  width: 10%;
-  object-fit: cover;
+  
 }
 
 /*contact*/
