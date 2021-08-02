@@ -159,9 +159,6 @@ h1::after {
   background: var(--blue);
 }
 
-#projectTile {
-}
-
 /*contact*/
 #contact {
   place-content: center;
