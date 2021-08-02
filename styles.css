@@ -135,6 +135,13 @@ h1::after {
   background: var(--gray);
 }
 
+#resumeIcon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /*about*/
 #about {
   display: grid;
