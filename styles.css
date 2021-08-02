@@ -143,9 +143,6 @@ h1::after {
   text-align: left;
 }
 
-#aboutImage {
-}
-
 /*projects*/
 #projects {
   place-content: center;
@@ -159,10 +156,6 @@ h1::after {
   margin-top: -10px;
   padding-top: 50px;
   font-size: 2rem;
-}
-
-#projectTile {
-  
 }
 
 /*contact*/
