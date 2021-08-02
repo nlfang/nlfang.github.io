@@ -152,10 +152,7 @@ h1::after {
   background: var(--blue);
 }
 
-#projectHeader {
-  margin-top: -10px;
-  padding-top: 50px;
-  font-size: 2rem;
+#projectTile {
 }
 
 /*contact*/
@@ -163,6 +160,9 @@ h1::after {
   place-content: center;
   text-align: center;
   width: 100%;
-  height: 100vh;
   background: var(--gray);
+}
+
+.contactImage {
+  margin-right: 50px;
 }
