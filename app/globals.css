@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-icon-circle {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+}
+
+.btn-icon-circle:hover {
+    border-color: black;
+}
