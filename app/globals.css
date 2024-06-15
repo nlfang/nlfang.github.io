@@ -18,3 +18,14 @@
 .btn-icon-circle:hover {
     border-color: black;
 }
+
+h2 {
+  @apply font-bold text-xl underline decoration-sky-500 decoration-2 underline-offset-4;
+}
+
+@layer utilities {
+    .container {
+      @apply mx-auto max-w-6xl px-4;
+    }
+  }
+  

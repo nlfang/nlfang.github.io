@@ -18,5 +18,24 @@ const config: Config = {
   plugins: [
     require('daisyui'),
   ],
+  daisyui: {
+    themes: [
+      {
+        onedark: {
+          "primary": "#E06C75",
+          "secondary": "#98C379",
+          "accent": "#61AFEF",
+          "neutral": "#ABB2BF",
+          "base-100": "#282C34",
+        },
+        night: {
+          ...require("daisyui/src/theming/themes")["night"],
+          "primary": "#61AFEF",
+          "base-100": "#282C34",
+        },
+      },
+      "dark",
+    ],
+  },
 };
 export default config;
