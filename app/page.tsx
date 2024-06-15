@@ -26,7 +26,7 @@ export default function Home() {
                 </a>
                 <a
                   className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12"
-                  href="https://github.com/yourusername"
+                  href="https://github.com/nlfang"
                   target="_blank"
                   rel="noreferrer"
                   style={{ padding: "4px" }}
