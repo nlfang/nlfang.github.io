@@ -6,18 +6,20 @@ export default function Home() {
     <div className="min-h-screen px-4 flex justify-center">
       <main className="mt-16 max-w-3xl w-full">
         <div className="mb-10 mockup-window border bg-base-300 border-base-300">
-          <div className="flex justify-center px-4 py-16 border-t border-base-300 bg-base-200">
-            <div className="mt-6">
-              <h1 className="font-bold text-4xl">Nicholas Fang</h1>
+          <div className="flex flex-col md:flex-row justify-center px-4 py-16 border-t border-base-300 bg-base-200">
+            <div className="mt-6 flex flex-col items-center md:items-start">
+              <h1 className="font-bold text-4xl text-center md:text-left">
+                Nicholas Fang
+              </h1>
               <a
-                href="mailto: nicholas.fang02@gmail.com"
+                href="mailto:nicholas.fang02@gmail.com"
                 className="text-sky-500 hover:underline"
               >
                 nicholas.fang02@gmail.com
               </a>
-              <div className="flex mt-3">
+              <div className="flex flex-wrap justify-center md:justify-start mt-3">
                 <a
-                  className="btn btn-secondary"
+                  className="btn btn-secondary m-1"
                   href="resume.pdf"
                   target="_blank"
                   rel="noreferrer"
@@ -25,7 +27,7 @@ export default function Home() {
                   <p>Resume / CV</p>
                 </a>
                 <a
-                  className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12"
+                  className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12 m-1"
                   href="https://github.com/nlfang"
                   target="_blank"
                   rel="noreferrer"
@@ -34,7 +36,7 @@ export default function Home() {
                   <FaGithub size={30} />
                 </a>
                 <a
-                  className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12"
+                  className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12 m-1"
                   href="https://linkedin.com/in/nlfang"
                   target="_blank"
                   rel="noreferrer"
@@ -44,7 +46,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="avatar ml-20 mt-8">
+            <div className="avatar ml-0 md:ml-20 mt-8 md:mt-8 flex justify-center md:justify-start">
               <div className="w-28 h-28 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
                 <img src="/images/me.jpg" />
               </div>
