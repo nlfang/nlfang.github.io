@@ -19,7 +19,7 @@ export default function Home() {
               </a>
               <div className="flex flex-wrap justify-center md:justify-start mt-3">
                 <a
-                  className="btn btn-secondary m-1"
+                  className="btn btn-secondary"
                   href="resume.pdf"
                   target="_blank"
                   rel="noreferrer"
@@ -27,7 +27,7 @@ export default function Home() {
                   <p>Resume / CV</p>
                 </a>
                 <a
-                  className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12 m-1"
+                  className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12"
                   href="https://github.com/nlfang"
                   target="_blank"
                   rel="noreferrer"
@@ -36,7 +36,7 @@ export default function Home() {
                   <FaGithub size={30} />
                 </a>
                 <a
-                  className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12 m-1"
+                  className="btn btn-outline btn-secondary flex items-center ml-3 w-12 h-12"
                   href="https://linkedin.com/in/nlfang"
                   target="_blank"
                   rel="noreferrer"

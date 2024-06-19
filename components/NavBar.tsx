@@ -1,18 +1,19 @@
-
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-100 flex items-center justify-center">
-      <a className="btn btn-ghost text-lg" href="/">
-        Home
-      </a>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal gap-x-2">
-          <li className="px-1">
+    <div className="navbar bg-base-100 flex justify-center">
+      <div className="flex flex-1 justify-center items-center">
+        <ul className="flex space-x-4">
+          <li>
+            <a className="btn btn-ghost text-lg" href="/">
+              Home
+            </a>
+          </li>
+          <li>
             <a className="btn btn-ghost text-lg" href="/projects">
               Projects
             </a>
           </li>
-          <li className="px-1">
+          <li>
             <a className="btn btn-ghost text-lg" href="/hobbies">
               Hobbies
             </a>
