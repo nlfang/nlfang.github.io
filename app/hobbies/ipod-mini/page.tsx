@@ -51,6 +51,8 @@ export default function Page() {
             For modifications, I replaced the 4 GB hard drive with an{" "}
             <a
               href="https://www.iflash.xyz/store/sdcf-adapter/"
+              target="_blank"
+              rel="noreferrer"
               className="text-sky-500 hover:underline"
             >
               SD-CF adapter

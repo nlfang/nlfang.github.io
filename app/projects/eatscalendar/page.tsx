@@ -16,18 +16,16 @@ export default function Page() {
                 </a>
               </li>
               <li>
-                <h1 className="font-bold md:text-2xl">
-                  BoilerDrive
-                </h1>
+                <h1 className="font-bold md:text-2xl">EatsCalendar</h1>
               </li>
             </ul>
             <p className="font-bold text-sm ml-4 md:mt-2 text-accent">
-                Jan 2023 - May 2023
+              May 2024
             </p>
           </div>
           <a
             className="btn btn-outline btn-secondary items-center ml-3 w-12 h-12"
-            href="https://github.com/ZachHeadington/BoilerDrive"
+            href="https://github.com/nlfang/EatsCalendar"
             target="_blank"
             rel="noreferrer"
             style={{ padding: "4px" }}
@@ -39,25 +37,23 @@ export default function Page() {
           <ul className="mb-4">
             <li className="flex">
               <div className="badge badge-secondary mr-2 w-20">Frontend</div>
-              <p>Next.js, TailwindCSS, daisyUI</p>
+              <p>Swift</p>
             </li>
             <li className="flex">
               <div className="badge badge-secondary w-20 mr-2">Backend</div>
-              <p>Python FastAPI, Azure Cosmos DB, OpenAI API</p>
+              <p>Spoonacular API</p>
             </li>
           </ul>
           <p>
-            BoilerDrive offers users a convenient cloud-based file storage
-            solution with helpful AI features. Using OpenAI's API, users can
-            retrieve contextual summaries of their files' contents, ask about
-            specific phrases or concepts within those files, and generate tags
-            for classifying and grouping files.
+            EatsCalendar is an app designed to make deciding what to eat easier.
+            The app allows users to view recipes taken from the Spoonacular API
+            and schedule the ones they want to make on a calendar.
           </p>
         </div>
         <div className="mt-8 flex flex-col items-center w-full">
           <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
-              src="https://www.youtube.com/embed/lrhrKwPTRs8?si=S4AcJEcDzAvMYsVj"
+              src="https://www.youtube.com/embed/_8t305VZ4co?si=fPDTKa1p9igdX3w8"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

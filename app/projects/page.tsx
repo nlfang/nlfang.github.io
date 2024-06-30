@@ -3,17 +3,17 @@ import Card from "@/components/Card";
 const projects = [
   {
     name: "BoilerDrive",
-    imageUrl: "/images/boilerdrivethumbnail.png",
+    imageUrl: "/images/boilerdrivecard.png",
     description: "Cloud-based file storage web app with AI features",
     tags: ["Web Dev", "OpenAI API"],
     link: "/projects/boilerdrive"
   },
   {
-    name: "Placeholder1",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    description: "Placeholder desc",
-    tags: [],
-    link: "/"
+    name: "EatsCalendar",
+    imageUrl: "/images/eatscalendarcard.png",
+    description: "iOS app helping users in selecting and preparing food recipes",
+    tags: ["iOS", "Swift"],
+    link: "/projects/eatscalendar"
   },
   {
     name: "Placeholder",

@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ name, imageUrl, description, tags, link }) => {
   return (
-    <div className="card w-96 bg-base-300 shadow-xl transition duration-300 ease-in-out hover:bg-base-200 hover:-translate-y-1 hover:scale-110">
+    <div className="card md:w-96 sm:w-20 bg-base-300 shadow-xl transition duration-300 ease-in-out hover:bg-base-200 hover:-translate-y-1 hover:scale-110">
       <a href={link}>
         <figure className="w-full h-64 overflow-hidden rounded-t-lg">
           <Image
