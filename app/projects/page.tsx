@@ -5,7 +5,7 @@ const projects = [
     name: "BoilerDrive",
     imageUrl: "/images/boilerdrivecard.png",
     description: "Cloud-based file storage web app with AI features",
-    tags: ["Web Dev", "OpenAI API"],
+    tags: ["Web Dev", "Fullstack", "OpenAI API"],
     link: "/projects/boilerdrive"
   },
   {
@@ -16,11 +16,11 @@ const projects = [
     link: "/projects/eatscalendar"
   },
   {
-    name: "Placeholder",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    description: "Placeholder desc",
-    tags: [],
-    link: "/"
+    name: "PurdueCircle",
+    imageUrl: "/images/purduecirclecard.png",
+    description: "Purdue-themed social media web app",
+    tags: ["Web Dev", "Fullstack"],
+    link: "/projects/purduecircle"
   }
 ];
 
