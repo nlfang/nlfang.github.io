@@ -4,16 +4,16 @@ const hobbies = [
     {
       name: "iPod mini",
       imageUrl: "/images/ipodminicard.jpg",
-      description: "Restoration of my cousin's old iPod mini",
+      description: "Storage upgrade and battery replacement of a 1st gen iPod mini",
       tags: [],
       link: "/hobbies/ipod-mini"
     },
     {
-      name: "Placeholder",
-      imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-      description: "Placeholder desc",
+      name: "Game Boy Advance",
+      imageUrl: "/images/gbacard.png",
+      description: "Screen and battery upgrade of a Game Boy Advance",
       tags: [],
-      link: "/"
+      link: "/hobbies/gba"
     },
     {
       name: "Placeholder",
